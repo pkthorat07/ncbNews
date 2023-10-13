@@ -1,0 +1,10 @@
+.list-container{
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    
+
+}
+.list-container a{
+    text-decoration: none;
+}
