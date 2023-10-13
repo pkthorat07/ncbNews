@@ -8,7 +8,8 @@ import { ListComponent } from './list/list.component';
 import { ToolsComponent } from './tools/tools.component';
 import { ContainerComponent } from './container/container.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule} from '@angular/material/card'
+import { MatCardModule} from '@angular/material/card';
+import { HttpClientModule} from '@angular/common/http'
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { MatCardModule} from '@angular/material/card'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
     
   ],
   providers: [],

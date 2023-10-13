@@ -3,5 +3,12 @@
     margin-bottom: 8px;
   }
   .card{
-    width: 300px;
+    width: 438px;
+    height: 520px;
+  }
+
+  .card img{
+  
+  width: 520px;
+  height: 210px;
   }
