@@ -10,7 +10,9 @@ import { ContainerComponent } from './container/ContainerComponent';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule} from '@angular/material/card';
 import { HttpClientModule} from '@angular/common/http';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
+import { FooterListComponent } from './footer-list/footer-list.component';
+import { FooterIconComponent } from './footer-icon/footer-icon.component'
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { FooterComponent } from './footer/footer.component'
     ListComponent,
     ToolsComponent,
     ContainerComponent,
-    FooterComponent
+    FooterComponent,
+    FooterListComponent,
+    FooterIconComponent
   ],
   imports: [
     BrowserModule,
