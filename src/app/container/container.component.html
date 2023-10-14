@@ -1,15 +1,19 @@
 
-<mat-card class="card">
-    <img mat-card-sm-image src=".//src/assets/img/image 58.png" >
-    <mat-card-header>
-        
+
+<div class="main-container">
+  <mat-card class="card" *ngFor='let news of ncbNewsData.articles'>
+    <img class="card-img" mat-card-sm-image src={{news.urlToImage}}>
+    <div class="card-text">
+      <mat-card-header>
         <mat-card-title-group>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Small</mat-card-subtitle>
-         
+          <mat-card-title class="card-title-text">{{news.title}}</mat-card-title>
         </mat-card-title-group>
       </mat-card-header>
-      <mat-card-content>
-        {{longText}}
-      </mat-card-content>
-</mat-card>
+      <mat-card-content class="disc">{{news.description}}</mat-card-content>
+      <div class="b-text">
+        <mat-card-subtitle >{{news.publishedAt}}| By {{news.source.name}}</mat-card-subtitle>
+      </div>
+    </div>
+  </mat-card>
+</div>
+

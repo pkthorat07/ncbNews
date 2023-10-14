@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ListComponent } from './list/list.component';
 import { ToolsComponent } from './tools/tools.component';
-import { ContainerComponent } from './container/container.component';
+import { ContainerComponent } from './container/ContainerComponent';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule} from '@angular/material/card';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component'
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HttpClientModule} from '@angular/common/http'
     HeaderComponent,
     ListComponent,
     ToolsComponent,
-    ContainerComponent
+    ContainerComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
