@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import { ResrapiService } from '../resrapi.service';
 
@@ -13,9 +13,13 @@ export class ContainerComponent {
   country: string = 'ind';
   newsData: any;
 
+  // @Input() card!: number;
+  // @Input() cardLimit!: number;
+
   longText = "The body of the late US Rep. John Lewis on Sunday will make the final journey across the famous bridge in Selma, Alabama, where he helped lead a march for voting rights in 1965.";
   ncbNewsData: any;
   newNewsData: any;
+  optinalImage=".//src/assets/img/image 58.png"
 
   constructor(
     public router: Router,
@@ -24,6 +28,11 @@ export class ContainerComponent {
 
   ngOnInit() {
     this.getNewsData();
+    this.restApiServices.news.subscribe(res=>{
+      this.ncbNewsData = res;   
+      console.log("ncbNewsData", this.ncbNewsData.articles);
+ 
+    })
     
   }
 
@@ -33,6 +42,8 @@ export class ContainerComponent {
       console.log("ncbNewsData", this.ncbNewsData.articles);
 
     });
+
+  
 
    
   }

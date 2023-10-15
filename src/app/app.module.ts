@@ -12,7 +12,9 @@ import { MatCardModule} from '@angular/material/card';
 import { HttpClientModule} from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { FooterListComponent } from './footer-list/footer-list.component';
-import { FooterIconComponent } from './footer-icon/footer-icon.component'
+import { FooterIconComponent } from './footer-icon/footer-icon.component';
+import { MatButtonModule} from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { FooterIconComponent } from './footer-icon/footer-icon.component'
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatDividerModule
     
   ],
   providers: [],
