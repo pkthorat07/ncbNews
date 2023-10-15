@@ -11,10 +11,10 @@ export class ResrapiService {
   news=new Subject<any>()
 
   apiurl="https://newsapi.org/v2/top-headlines?country=us&apiKey="
-  apikey="1834798b08a04cc3a2105473d9210525"
+  apikey="ec39229c4d1c4393b1dc0aab9c2786ed"
 
   url="https://newsapi.org/v2/top-headlines?country="
-  key="&apiKey=1834798b08a04cc3a2105473d9210525"
+  key="&apiKey=ec39229c4d1c4393b1dc0aab9c2786ed"
 
 
   constructor(

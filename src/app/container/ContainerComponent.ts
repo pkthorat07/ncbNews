@@ -16,6 +16,7 @@ export class ContainerComponent {
   ncbNewsData: any;
   newNewsData: any;
   optinalImage = ".//src/assets/img/image 58.png"
+  
 
 
   constructor(

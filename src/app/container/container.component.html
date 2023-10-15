@@ -1,4 +1,4 @@
-<div class="main-container">
+<div class="main-container" >
   <mat-card class="card" *ngFor='let news of ncbNewsData?.articles' >
     
     <img class="card-img" mat-card-sm-image [src]="news.urlToImage ? news.urlToImage: optinalImage"  >
@@ -35,25 +35,7 @@
   <button id="view-more"  mat-stroked-button color="Accent"> View More</button>
 </div>
 
-<!-- <script>
 
-let vewMorebtn=document.querySelector('#view-more');
-let currentItem= 9;
-
-vewMorebtn.onclick =()=>{
-  let carts =[...querySelectorAll('.main-container .card-text .card') ];
-  for ( var i=currentItem; i> currentItem + 9; i++ ){
-    carts[i].style.display = 'inline-block';
-  }
-  currentItem += 9;
-  if(currentItem >= carts.length){
-    vewMorebtn.style.display='none'
-  }
-
-}
-
-  
-</script> -->
 
 
 
