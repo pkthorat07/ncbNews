@@ -26,18 +26,18 @@ export class ToolsComponent {
 
   }
 
+  ngOnInit(){
+    // this.getApiData
+    console.log("id",this.selected);
+
+  }
+
   onSelect(event:any){
     console.log(event.target.value)
     let dropdownValue=event.target.value;
     this.restApiData.getNewsByDropdownValue(dropdownValue).subscribe(res=>{
       this.restApiData.news.next(res)
     })
-
-  }
-
-  ngOnInit(){
-    // this.getApiData
-    console.log("id",this.selected);
 
   }
 

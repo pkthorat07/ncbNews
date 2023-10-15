@@ -1,9 +1,9 @@
 <div class="main-container">
-  <mat-card class="card" *ngFor='let news of ncbNewsData?.articles'>
+  <mat-card class="card" *ngFor='let news of ncbNewsData?.articles' >
     
     <img class="card-img" mat-card-sm-image [src]="news.urlToImage ? news.urlToImage: optinalImage"  >
     <div  class="card-text">
-      <mat-card-header>
+      <mat-card-header >
         <mat-card-title-group>
           <mat-card-title class="card-title-text">{{news?.title}}</mat-card-title>
         </mat-card-title-group>
@@ -32,7 +32,7 @@
 
 
 <div class="mat-btn">
-  <button id="view-more" onclick="vewMorebtn()" mat-stroked-button color="Accent"> View More</button>
+  <button id="view-more"  mat-stroked-button color="Accent"> View More</button>
 </div>
 
 <!-- <script>
